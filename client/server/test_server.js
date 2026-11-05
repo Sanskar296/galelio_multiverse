@@ -2,7 +2,19 @@ const http = require('http');
 const path = require('path');
 
 // Start express server
-const app = require('./src/index.js');
+const app = require('./index.js');
+
+let server;
+const PORT = process.env.PORT || 5001;
+
+function startServer() {
+  return new Promise((resolve) => {
+    server = app.listen(PORT, () => {
+      console.log(`[Test Server] Listening on port ${PORT}`);
+      resolve();
+    });
+  });
+}
 
 function request(options, postData) {
   return new Promise((resolve, reject) => {
@@ -27,6 +39,7 @@ function request(options, postData) {
 }
 
 async function runTests() {
+  await startServer();
   console.log('\n--- Running Verification Suite ---');
   let passed = 0;
   let total = 0;
@@ -44,7 +57,7 @@ async function runTests() {
 
   // 1. Health
   await test('GET /api/health', async () => {
-    const res = await request({ hostname: 'localhost', port: 5000, path: '/api/health', method: 'GET' });
+    const res = await request({ hostname: 'localhost', port: PORT, path: '/api/health', method: 'GET' });
     if (res.statusCode !== 200) throw new Error(`Status ${res.statusCode}`);
     const json = JSON.parse(res.body);
     if (json.status !== 'ok') throw new Error(`Unexpected status ${json.status}`);
@@ -52,7 +65,7 @@ async function runTests() {
 
   // 2. Courses
   await test('GET /api/courses', async () => {
-    const res = await request({ hostname: 'localhost', port: 5000, path: '/api/courses', method: 'GET' });
+    const res = await request({ hostname: 'localhost', port: PORT, path: '/api/courses', method: 'GET' });
     if (res.statusCode !== 200) throw new Error(`Status ${res.statusCode}`);
     const json = JSON.parse(res.body);
     if (!json.success || json.count !== 3) throw new Error(`Expected 3 courses, got ${json.count}`);
@@ -60,7 +73,7 @@ async function runTests() {
 
   // 3. Events
   await test('GET /api/events', async () => {
-    const res = await request({ hostname: 'localhost', port: 5000, path: '/api/events', method: 'GET' });
+    const res = await request({ hostname: 'localhost', port: PORT, path: '/api/events', method: 'GET' });
     if (res.statusCode !== 200) throw new Error(`Status ${res.statusCode}`);
     const json = JSON.parse(res.body);
     if (!json.success || json.count < 2) throw new Error(`Expected events, got ${json.count}`);
@@ -71,7 +84,7 @@ async function runTests() {
     const res = await request(
       {
         hostname: 'localhost',
-        port: 5000,
+        port: PORT,
         path: '/api/contact',
         method: 'POST',
         headers: { 'Content-Type': 'application/json' }
@@ -94,7 +107,7 @@ async function runTests() {
     const res = await request(
       {
         hostname: 'localhost',
-        port: 5000,
+        port: PORT,
         path: '/api/contact/book-trial',
         method: 'POST',
         headers: { 'Content-Type': 'application/json' }
@@ -115,20 +128,20 @@ async function runTests() {
 
   // 6. SPA fallback React frontend
   await test('GET / and /about (React SPA HTML delivery)', async () => {
-    const res1 = await request({ hostname: 'localhost', port: 5000, path: '/', method: 'GET' });
+    const res1 = await request({ hostname: 'localhost', port: PORT, path: '/', method: 'GET' });
     if (res1.statusCode !== 200 || !res1.body.includes('<div id="root"></div>')) {
       throw new Error(`Failed / SPA html deliver: ${res1.statusCode}`);
     }
 
-    const res2 = await request({ hostname: 'localhost', port: 5000, path: '/about', method: 'GET' });
+    const res2 = await request({ hostname: 'localhost', port: PORT, path: '/about', method: 'GET' });
     if (res2.statusCode !== 200 || !res2.body.includes('<div id="root"></div>')) {
       throw new Error(`Failed /about SPA html fallback: ${res2.statusCode}`);
     }
   });
 
   console.log(`\nVerification Results: ${passed}/${total} tests passed!`);
+  if (server) server.close();
   setTimeout(() => process.exit(0), 500);
 }
 
-// Give server 500ms to open port then test
-setTimeout(runTests, 500);
+runTests();
