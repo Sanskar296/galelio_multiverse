@@ -1,0 +1,26 @@
+{
+  "contacts": [
+    {
+      "id": "contact_1793552528557",
+      "name": "Test Astronomer",
+      "email": "astronomer@test.com",
+      "phone": "+91 9999999999",
+      "subject": "Program Inquiry",
+      "message": "Interested in Junior Astronomer course",
+      "createdAt": "2026-11-01T17:02:08.557Z"
+    }
+  ],
+  "trialBookings": [
+    {
+      "id": "trial_1793552528564",
+      "studentName": "Aarav",
+      "parentName": "Rohan",
+      "email": "rohan@test.com",
+      "phone": "+91 9888888888",
+      "age": 10,
+      "level": "Level-1",
+      "preferredSlot": "Next available weekend session",
+      "createdAt": "2026-11-01T17:02:08.564Z"
+    }
+  ]
+}

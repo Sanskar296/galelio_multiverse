@@ -1,0 +1,54 @@
+{
+  "googleRating": 4.9,
+  "googleReviewCount": "50+ verified reviews",
+  "googleReviewsUrl": "https://g.co/kgs/NkxTzvg",
+  "socialStats": {
+    "facebook": {
+      "name": "Galileo Multiverse - Online Astronomy School",
+      "likes": "2K likes",
+      "followers": "2.1K followers",
+      "url": "https://www.facebook.com/galileomultiverse"
+    },
+    "instagram": {
+      "handle": "@galileo.multiverse",
+      "name": "Galileo Multiverse",
+      "url": "https://www.instagram.com/galileo.multiverse/"
+    },
+    "twitter": {
+      "handle": "@GalileoAi",
+      "name": "Galileo Multiverse",
+      "url": "https://twitter.com/GalileoAi"
+    }
+  },
+  "testimonials": [
+    {
+      "name": "Priya Sharma",
+      "role": "Parent of 9yo student",
+      "rating": 5,
+      "source": "Google Review",
+      "review": "My son was hooked from the very first free trial session. The educators at Galileo Multiverse explain complex astrophysics concepts with such simplicity, fun visuals, and real excitement. Best online science academy for kids!"
+    },
+    {
+      "name": "Rajesh Kumar",
+      "role": "Parent of Level-2 Student",
+      "rating": 5,
+      "source": "Google Review",
+      "review": "The Junior Astronomer program is extraordinary. My daughter now talks about black holes, gravitational waves, and exoplanets with genuine understanding. Thank you Abhishek sir and team!"
+    },
+    {
+      "name": "Ananya Sengupta",
+      "role": "Sunday Space Club Member",
+      "rating": 5,
+      "source": "Google Review",
+      "review": "Sunday Space Club is our favorite weekly routine. The live telescope sessions and Q&A with real scientists keep curiosity burning bright. Highly recommended to every young stargazer."
+    },
+    {
+      "name": "Vikram Patel",
+      "role": "Parent of Level-3 Student",
+      "rating": 5,
+      "source": "Google Review",
+      "review": "Career-oriented program is top notch. The depth of celestial mechanics and practical astronomical tools they teach gave my son clear guidance towards pursuing astrophysics at ISRO."
+    }
+  ]
+}
+

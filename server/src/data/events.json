@@ -1,0 +1,47 @@
+[
+  {
+    "id": "sunday-space-club",
+    "title": "Sunday Space Club",
+    "schedule": "Every Sunday at 12:30 PM IST",
+    "pricing": "1500 INR monthly or 15000 INR annually",
+    "description": "Explore the cosmos with our Sunday Space Club, meeting weekly at 12:30 PM IST. Join our community of young astronomers for just 1500 INR monthly or 15000 INR annually and embark on an adventure through the universe!",
+    "image": "/images/space-club-pg1.png",
+    "joinUrl": "https://forms.gle/ySEsdV87hbQKeaim9",
+    "donateUrl": "https://www.instamojo.com/@galileomultiverse/",
+    "features": [
+      "Weekly live interactive astronomy sessions",
+      "Real-time telescope viewing & sky maps",
+      "Hands-on DIY space experiments",
+      "Q&A with space educators & guest experts"
+    ]
+  },
+  {
+    "id": "2-days-space-camp",
+    "title": "2 Days Space Camp",
+    "schedule": "Every Saturday and Sunday",
+    "pricing": "25 USD or 2000 INR",
+    "description": "Join our weekend space camp every Saturday and Sunday for an astronomical adventure! With a membership fee of just 25 USD or 2000 INR, embark on a cosmic journey with us.",
+    "image": "/images/space-camp-sat-sun-1.png",
+    "joinUrl": "https://forms.gle/ruwMaE7tzcBXkUqA9",
+    "features": [
+      "Intensive 2-day cosmic deep dive",
+      "Rocketry & planetary physics workshops",
+      "Certificate of participation",
+      "Interactive stargazing challenges"
+    ]
+  },
+  {
+    "id": "mysterious-universe-hashima",
+    "title": "Mysterious Universe with Dr. Hasan Hashima",
+    "schedule": "Special Event / Recorded Sessions",
+    "description": "Relive the captivating experience of our event 'Mysterious Universe' with exclusive videos featuring esteemed NASA Scientist Dr. Hasan Hashima. On November 5th, participants embarked on an enlightening journey through the cosmos, gaining insights into the mysteries of space exploration and discovering the wonders of the universe alongside a renowned expert.",
+    "image": "/images/asia_orig.png",
+    "youtubeUrl": "https://www.youtube.com/channel/UCOQL-C7lBheiPCU_GFyT6Zw",
+    "features": [
+      "Direct session with esteemed NASA Scientist Dr. Hasan Hashima",
+      "Unlocking the mysteries of deep cosmic exploration",
+      "Exclusive event videos available on our official YouTube channel"
+    ]
+  }
+]
+

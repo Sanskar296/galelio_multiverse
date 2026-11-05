@@ -1,0 +1,73 @@
+[
+  {
+    "id": "level-1",
+    "level": "Level-1",
+    "duration": "3 Months",
+    "title": "3 Months / Level-1 Program",
+    "subtitle": "Deep Space Exploration",
+    "description": "Embark on a cosmic journey tailored for your young stargazers with our Deep Space Exploration Level 1 Program. Led by expert astronomers, this immersive experience unveils the wonders of the universe, igniting curiosity and inspiring a lifelong passion for discovery. Join us as we guide your child through the mysteries of deep space, sparking their imagination and nurturing their love for astronomy.",
+    "image": "/images/christmas-ad2.png",
+    "freeTrialUrl": "https://forms.gle/pPwxRJukbqj8aGqv8",
+    "detailsUrl": "https://posts.gle/aZN9cD",
+    "topics": [
+      "Solar System Exploration & Planetary Science",
+      "Stargazing & Constellation Identification",
+      "Moon Phases, Lunar Eclipses & Tides",
+      "Introduction to Telescopes & Space Optics",
+      "The Birth and Life Cycle of Stars",
+      "Interactive Quizzes & Hands-on Sky Observation Activities"
+    ],
+    "targetAge": "Ages 7 - 12",
+    "schedule": "Weekly interactive live sessions",
+    "badge": "Popular for Beginners"
+  },
+  {
+    "id": "level-2",
+    "level": "Level-2",
+    "duration": "12 Months",
+    "title": "12 months / level-2 program",
+    "subtitle": "Junior Astronomer Program –",
+    "description": "Our Junior Astronomer Program is designed for curious young minds who are ready to journey beyond the basics of space. This level introduces kids to fascinating topics like black holes, rockets, exoplanets, life in space, quantum science, robotics in astronomy, neutrino exploration, plasma physics, and the mysterious forces that shape our universe. With interactive teaching sessions, hands-on experiments, fun quizzes, and visual learning tools, students develop critical thinking while understanding real scientific concepts in a simplified, playful way. Each topic is carefully curated to blend imagination with scientific facts, making learning both exciting and meaningful.",
+    "image": "/images/whatsapp-image-2025-05-07-at-11-15-40-9ae640ce_orig.jpg",
+    "freeTrialUrl": "https://forms.gle/pogMC8kZqmXx5dnc6",
+    "detailsUrl": "https://www.facebook.com/share/p/1Wunn2V4v3/",
+    "topics": [
+      "Black Holes, Event Horizons & Gravitational Singularities",
+      "Rocket Science, Orbital Mechanics & Propulsion Systems",
+      "Exoplanets & The Search for Extraterrestrial Life",
+      "Life in Space & Human Spaceflight Biology",
+      "Quantum Science & Atomic Foundations of the Cosmos",
+      "Robotics in Astronomy, Rovers & Deep Space Probes",
+      "Neutrino Astronomy & High Energy Particle Physics",
+      "Plasma Physics & Solar Magnetic Dynamos"
+    ],
+    "targetAge": "Ages 9 - 15",
+    "schedule": "Comprehensive 12-Month Year-Round Curriculum",
+    "badge": "Comprehensive"
+  },
+  {
+    "id": "level-3",
+    "level": "Level-3",
+    "duration": "12 Months",
+    "title": "12 months / level-3 program",
+    "subtitle": "Career-Oriented Advance Astronomy and Astrophysics Program",
+    "description": "Prepare your child for a future among the stars with our Career-Oriented 12-Month Advance Astronomy and Astrophysics Program. Led by industry-leading experts, this comprehensive journey equips students with the specialized knowledge and skills needed for a successful career in space science. From advanced celestial mechanics to cutting-edge research methodologies, our program empowers young astronomers to reach for the cosmos and pursue their dreams among the galaxies. Join us as we launch your child's career into the infinite possibilities of the universe.",
+    "image": "/images/astrophysics-12-months-1.png",
+    "freeTrialUrl": "https://forms.gle/pogMC8kZqmXx5dnc6",
+    "detailsUrl": "https://posts.gle/tp37py",
+    "topics": [
+      "Advanced Celestial Mechanics & Orbital Dynamics",
+      "Theoretical Astrophysics & Cosmology Equations",
+      "Spectroscopy & Stellar Evolution Models",
+      "Radio Astronomy & Space Telemetry Data Analysis",
+      "Python for Astronomical Data & Research Analysis",
+      "Space Mission Design & Satellite Engineering",
+      "Career Pathways: ISRO, NASA, ESA & Space Tech Startups",
+      "Research Paper Guidance & Mentorship from Space Scientists"
+    ],
+    "targetAge": "Ages 12 - 18 & Aspiring Space Scientists",
+    "schedule": "Advanced 12-Month Mentorship & Practical Labs",
+    "badge": "Career Oriented"
+  }
+]
+
