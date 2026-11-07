@@ -1,11 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import Hero from '../components/Hero';
+import DynamicBanner from '../components/DynamicBanner';
 import CourseCard from '../components/CourseCard';
 import ReviewsSection from '../components/ReviewsSection';
 import SocialSection from '../components/SocialSection';
 import { Telescope, Compass, Award, Rocket, Sparkles } from 'lucide-react';
 
-export default function Home({ onOpenTrialModal }) {
+export default function Home({ 
+  onOpenTrialModal,
+  videoUrl = '/images/dynamic_images/dewali-wishes-bygalileo_multiverse_video.mp4',
+  videoUrls,
+  imageUrl = '/images/dynamic_images/dewali-wishes-bygalileo_multiverse.jpeg',
+  loopDuration = 10,
+  showBanner = true
+}) {
   const [courses, setCourses] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -32,6 +40,17 @@ export default function Home({ onOpenTrialModal }) {
       {/* Overview & Welcome Section */}
       <section className="py-20 relative bg-space-950 border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          {/* Cosmic Celebration Video Banner with Overlapping Greeting Card */}
+          {showBanner && (
+            <DynamicBanner
+              videoUrl={videoUrl}
+              videoUrls={videoUrls}
+              imageUrl={imageUrl}
+              loopDuration={loopDuration}
+            />
+          )}
+
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
             {/* Left Column: Heading and Text verbatim */}
